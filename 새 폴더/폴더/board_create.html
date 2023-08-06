@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 작성하기</title>
+    <link rel="stylesheet" href="board_create.css"> <!-- CSS 파일과 연결 -->
+</head>
+<body>
+    <header>
+        <nav id="topmenu"> <!--nav 메뉴바-->
+            <ul>
+                <li><a class="menulink" href="collect.html">약 모아보기</a></li>
+                <li><a class="menulink" href="board.html">자유게시판</a></li>
+                <li><a class="menulink" href="review.html">리뷰</a></li>
+                <li><a class="menulink" href="consultation.html">전문의 상담</a></li>
+                <li><a class="menulink" href="introduce.html">기업 소개</a></li>
+
+            <div id="login-signup"> <!---회원가입&로그인 작성 칸-->
+                <span id="login-signup-text">
+                    <a class="menulink" href="signup.html">회원가입</a>|
+                    <a class="menulink" href="login.html">로그인</a>
+                </span>
+            </div>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h4>자유 게시판</h4>
+        <hr />
+
+        <form id="review-form">  <!-- 리뷰 제출 폼 -->
+            <div id="review-title">
+                <input name="q" type="text" placeholder="제목을 입력해주세요." aria-label=".form-control-lg example">
+            </div>
+        </form>
+
+        <form id="review-maintext" action="#" accept-charset="UTF-8" name="review_write" method="get">
+            <textarea name="comment" cols="50" rows="5" placeholder=" 내용을 입력하세요."></textarea>
+        </form>
+
+        <div id="submit">
+            <button id="gray" type="temporary">임시 등록</button>
+            <button id="blue" type="submit">등록</button>
+        </div>
+
+
+       
+    </main>
+
+    <footer>
+        <nav id="bottommenu">
+            <ul>
+                <li class="bottommenu"> 약과함께 소개 </li>
+                <li class="bottommenu"> 개인정보처리방침 </li>
+                <li class="bottommenu"> 저작권 정보 </li>
+                <li class="bottommenu"> 이용 안내 </li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <ul>
+                <li class="contact_bottommenu"> 문의정보 </li>
+                <li class="contact_bottommenu"> 약과함께 </li>
+                <li class="contact_bottommenu"> 입금정보 </li>
+            </ul>
+            <p>1234-5678</p>
+            <p>10:00 - 18:00 (Lunch 12:00 - 13:00)</p>
+        </div>
+            <p class="copy-right">&copy; 2023 약과함께. All rights reserved.</p>
+    </footer>
+</body>
+</html>
