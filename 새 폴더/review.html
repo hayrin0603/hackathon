@@ -3,9 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>review</title>
+    <link rel="stylesheet" href="review.css"> <!-- CSS 파일과 연결 -->
+    <title>리뷰 게시판</title>
 </head>
 <body>
-    
+    <header>
+        <nav id="topmenu"> <!--nav 메뉴바-->
+            <ul>
+                <li><a class="menulink" href="collect.html">약 모아보기</a></li>
+                <li><a class="menulink" href="board.html">자유게시판</a></li>
+                <li><a class="menulink" href="review.html">리뷰</a></li>
+                <li><a class="menulink" href="consultation.html">전문의 상담</a></li>
+                <li><a class="menulink" href="introduce.html">기업 소개</a></li>
+
+            <div id="login-signup"> <!---회원가입&로그인 작성 칸-->
+                <span id="login-signup-text">
+                    <a class="menulink" href="signup.html">회원가입</a>|
+                    <a class="menulink" href="login.html">로그인</a>
+                </span>
+            </div>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--리뷰 게시판 모음-->
+        <h4>리뷰 게시판</h4>
+        <p>자유롭게 글을 남겨주세요.</p>
+        <hr />
+        <table class="sub_news" cellspacing="0" summary="게시판의 글 제목 리스트">
+            <caption> 게시판 리스트 </caption>
+            <colgroup>
+                <col>
+                    <col width="110">
+                    <col width="100">
+                    <col width="80">
+            </colgroup>
+
+            <thead> <!-- 표 머리글-->
+                <tr>
+                    <th scope="col">제목</th>
+                    <th scope="col">글쓴이</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- 게시판 등록글 tr-->
+                    <td class="title">
+                        <a href="#">게시판 제목</a> <!-- 게시판 제목 누르면 링크 연결-->
+                    </td>
+                    <td class="name">글쓴이 이름</td>
+                    <td class="date">날짜</td>
+                    <td class="hit">조회수</td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <a href="#">게시판 제목</a>
+                    </td>
+                    <td class="name">글쓴이 이름</td>
+                    <td class="date">날짜</td>
+                    <td class="hit">조회수</td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <a href="#">게시판 제목</a>
+                    </td>
+                    <td class="name">글쓴이 이름</td>
+                    <td class="date">날짜</td>
+                    <td class="hit">조회수</td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <a href="#">게시판 제목</a>
+                    </td>
+                    <td class="name">글쓴이 이름</td>
+                    <td class="date">날짜</td>
+                    <td class="hit">조회수</td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <a href="#">게시판 제목</a>
+                    </td>
+                    <td class="name">글쓴이 이름</td>
+                    <td class="date">날짜</td>
+                    <td class="hit">조회수</td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <a href="#">게시판 제목</a>
+                    </td>
+                    <td class="name">글쓴이 이름</td>
+                    <td class="date">날짜</td>
+                    <td class="hit">조회수</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="submit">
+            <button id="blue" type="submit" onclick = "location.href = 'review_create.html'">글쓰기</button>        
+        </div>
+
+        
+        <div class="pagination">
+            <button class="prev-btn" onclick="goToPrevPage()">이전 페이지</button>
+            <span class="current-page">1</span>
+            <button class="next-btn" onclick="goToNextPage()">다음 페이지</button>
+        </div>
+    </main>
+    <footer>
+        <nav id="bottommenu">
+            <ul>
+                <li class="bottommenu"> 약과함께 소개 </li>
+                <li class="bottommenu"> 개인정보처리방침 </li>
+                <li class="bottommenu"> 저작권 정보 </li>
+                <li class="bottommenu"> 이용 안내 </li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <ul>
+                <li class="contact_bottommenu"> 문의정보 </li>
+                <li class="contact_bottommenu"> 약과함께 </li>
+                <li class="contact_bottommenu"> 입금정보 </li>
+            </ul>
+            <p>1234-5678</p>
+            <p>10:00 - 18:00 (Lunch 12:00 - 13:00)</p>
+        </div>
+            <p class="copy-right">&copy; 2023 약과함께. All rights reserved.</p>
+    </footer>
 </body>
 </html>

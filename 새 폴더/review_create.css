@@ -1,0 +1,186 @@
+body {
+    margin: 0; /* 페이지의 기본 마진 제거 */
+    font-family: Arial, sans-serif; /* 원하는 폰트 설정 */
+}
+#topmenu {
+    width: 100%; /* 너비를 화면 가득 차도록 설정 */
+    background-color: #ffffff; /* 배경색 설정 */
+    height: 45px; /* 높이 조정 */
+    margin-left: 220px;
+    margin-top: 10px; /* 상단과 메뉴 사이 간격 조정*/
+}
+#topmenu ul {
+    margin: 0; /* 내비게이션 메뉴의 기본 마진 제거 */
+    padding: 0; /* 내비게이션 메뉴의 기본 패딩 제거 */
+    list-style: none; /* 리스트 스타일 제거 */
+    display: flex; /* 내비게이션 메뉴를 가로로 배치하기 위한 flex 설정 */
+    justify-content: center; /* 메뉴 항목 가운데로 정렬 */
+    align-items: center; /* 메뉴 항목 수직 중앙으로 정렬 */
+    height: 100%; /* 내비게이션 메뉴 높이를 상위 컨테이너와 동일하게 설정 */
+}
+#topmenu li {
+    margin: 0 10px; /* 각 메뉴 항목의 좌우 간격 조정 */
+}
+#topmenu .menulink {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 8px 25px; /* 메뉴 항목 내부 여백 조정 */
+   
+}
+#topmenu .menulink:hover {
+    color: rgb(0 102 255); /* 마우스 오버 시 글자색 변경 */
+}
+
+/* 회원가입&로그인 메뉴 스타일 */
+#login-signup {
+    margin-left: 350px;
+    display: flex;
+    align-items: center; /* '회원가입|로그인' 세로, 가운데 정렬 */
+}
+#login-signup-text {
+    font-size: 10px;
+    margin-right: 5px; /* 메뉴와 텍스트 간격 조정 */
+}
+
+/* 메인 스타일 */
+main {
+    padding: 20px;
+}
+
+h4 {
+    margin-left: 400px; /* 왼쪽에서 400px 만큼 띄우기 */
+    margin-bottom: 15px; /*아래에서 15만큼 띄우기 */
+}
+
+hr {
+    width: 55%; /* 줄 길이 */
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: 400px;
+}
+
+#review-maintext {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    height: 400px;
+    margin-left: 400px;
+}
+
+#review-title {
+    position: relative;
+    width: 600px;
+}
+
+textarea {
+    width: 810px;
+    height: 300px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 800px;
+}
+
+#submit {
+    margin-left: 1050px;
+    border: none;
+
+}
+
+
+#gray {
+    margin-right: 4px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #000000;
+    padding: 10px 15px;
+}
+
+#blue {
+    margin-left: -3px;
+    background-color:rgb(32,88,169);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+#bottommenu {
+    width: 100%; /* 너비를 화면 가득 차도록 설정 */
+    height: 50px; /* 높이 조정 */
+    margin-top: 5px; /* 상단과 메뉴 사이 간격 조정*/
+}
+#bottommenu ul {
+    margin: 0; /* 내비게이션 메뉴의 기본 마진 제거 */
+    padding: 0; /* 내비게이션 메뉴의 기본 패딩 제거 */
+    list-style: none; /* 리스트 스타일 제거 */
+    display: flex; /* 내비게이션 메뉴를 가로로 배치하기 위한 flex 설정 */
+    margin-left: 450px;
+    align-items: center; /* 메뉴 항목 수직 중앙으로 정렬 */
+    height: 5%; /* 내비게이션 메뉴 높이를 상위 컨테이너와 동일하게 설정 */
+}
+#bottommenu li {
+    margin: 0 10px; /* 각 메뉴 항목의 좌우 간격 조정 */
+}
+#bottommenu .bottommenu {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px; /* 메뉴 항목의 내부 여백 조정 */
+}
+#bottommenu .bottommenu:hover {
+    color: rgb(0 102 255); /* 마우스 오버 시 글자색 변경 */
+}
+
+footer { 
+    background-color: rgb(32,88,169);
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+    position: absolute; /* 하단에 고정 */
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    }
+    
+.footer-links {
+    margin-bottom: 10px;
+}
+    
+.footer-links a {    
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+    
+.footer-links a:hover {
+    text-decoration: underline;
+}
+    
+.footer-contact {
+    font-size: 13px; 
+    margin-bottom: 0px;
+}
+
+.contact_bottommenu {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+}
+    
+.copy-right {
+    font-size: 12px;
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>약과함께</title>
-    <link rel="stylesheet" href="main.css"> <!-- css 파일 연결 -->
+    <title>리뷰 작성하기</title>
+    <link rel="stylesheet" href="review_create.css"> <!-- CSS 파일과 연결 -->
 </head>
 <body>
     <header>
@@ -27,21 +27,33 @@
     </header>
 
     <main>
-        <div id="main-banner"> <!-- 메인 배너 약 이미지-->
-            <img src="img/main약.jpg" alt="메인배너 약 이미지">
-            <div class="banner-text">무슨 약이 필요하신가요?</div> <!-- 배너 중앙 텍스트-->
-        </div>
+        <h4>리뷰 게시판</h4>
+        <hr />
 
-        <div id="search">
-            <form class="search-form" action="https://www.google.com/search" method="GET"> <!--입력된 text 링크로 이동-->
-                <input name="q" type="text" placeholder="의약품명, 증상, 성분명을 입력하세요." aria-label=".form-control-lg example">
-            </form>
-        </div>
-        <div class="image-container">
-            <img src="img/pills1.png" alt="이미지1">
-            <img src="img/pills2.png" alt="이미지2">
+        <form id="review-form">  <!-- 리뷰 제출 폼 -->
+            <div id="review-title">
+                <!--<label class="reg" for="class">
+                    <select id="class">
+                        <option value="pills">약을 선택해주세요</option>
+                        <option value="pills">해열제</option>
+                        <option value="pills">근육통</option>
+                    </select>
+                </label>--> <!--약 선택하기 (더보기)-->
+                <input name="q" type="text" placeholder="약을 선택해주세요." aria-label=".form-control-lg example">
+                <input name="q" type="text" placeholder="제목을 입력해주세요." aria-label=".form-control-lg example">
+            </div>
+        </form>
+
+        <form id="review-maintext" action="#" accept-charset="UTF-8" name="review_write" method="get">
+            <textarea name="comment" cols="50" rows="5" placeholder=" 내용을 입력하세요."></textarea>
+        </form>
+
+        <div id="submit">
+            <button id="gray" type="temporary">임시 등록</button>
+            <button id="blue" type="submit">등록</button>
         </div>
         
+       
     </main>
 
     <footer>
