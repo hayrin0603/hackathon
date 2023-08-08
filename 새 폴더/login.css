@@ -1,0 +1,139 @@
+* { 
+    /* 초기화 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li {
+    list-style: none;
+  }
+  .logo00{
+    /* 상단 왼쪽에 있는 로고 */
+    float: left;
+    width: 165px;
+    height: 58px;
+  }
+  
+  .menu_bar{
+    display: flex;
+    
+   
+
+  }
+  
+  .wrap {
+    /* 로그인 박스 */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#ffffff;
+   
+  }
+  .logo{
+    /* 로그인 박스 위에 있는 로고 */
+    width: 165px;
+    height: 58px;
+    display:block;
+    margin :1px auto;
+  }
+  
+  .login {
+    /* 로그인 요소들  */
+    width: 60%;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+   
+    
+  }
+  
+  h2 {
+    color: #000;
+    font-size: 2em;
+  }
+  
+  
+  
+  .login_id {
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .login_id input {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    
+  }
+  
+  .login_pw {
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .login_pw input {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login_etc {
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .submit {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .submit input {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    background-color: #0064FF;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+  .login_etc02{
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
